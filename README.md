@@ -1,1 +1,1 @@
-
+******** The QRCode/BarCode Scanner *********
