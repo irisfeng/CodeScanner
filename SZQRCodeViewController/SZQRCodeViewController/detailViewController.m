@@ -8,15 +8,24 @@
 
 #import "detailViewController.h"
 
-@interface detailViewController ()
+@interface detailViewController () <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *testWebView;
 @property (weak, nonatomic) IBOutlet UILabel *textLbl;
 
+@property (strong, nonatomic) UIActivityIndicatorView *indicator;
 
 @end
 
 @implementation detailViewController
+
+- (UIActivityIndicatorView *)indicator {
+    if (!_indicator) {
+        _indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        _indicator.color = [UIColor lightGrayColor];
+    }
+    return _indicator;
+}
 
 - (IBAction)donePressed:(id)sender {
     
@@ -31,6 +40,12 @@
     
     _testWebView.opaque = NO;
     _testWebView.backgroundColor = [UIColor clearColor];
+    _testWebView.delegate = self;
+    
+    self.indicator.center = self.view.center;
+    [self.view addSubview:self.indicator];
+    
+//    [_indicator startAnimating];
     
     NSURL *url;
     NSLog(@"传递后的字符串是：%@",self.codeOutString);
@@ -49,19 +64,14 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)webViewDidStartLoad:(UIWebView *)webView{
+    [_indicator startAnimating];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [_indicator stopAnimating];
 }
-*/
+
+
 
 @end
