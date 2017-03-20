@@ -25,7 +25,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _textLbl.backgroundColor = [UIColor clearColor];
     _textLbl.hidden = true;
+    
+    _testWebView.opaque = NO;
+    _testWebView.backgroundColor = [UIColor clearColor];
+    
     NSURL *url;
     NSLog(@"传递后的字符串是：%@",self.codeOutString);
     if ([_codeOutString hasPrefix:@"http://"] || [_codeOutString hasPrefix:@"https://"] ) {

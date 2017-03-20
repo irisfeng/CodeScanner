@@ -76,14 +76,14 @@
 {
     if (upOrdown == NO) {
         num ++;
-        _line.frame = CGRectMake(CGRectGetMinX(_line.frame), 110+2*num, CGRectGetWidth(_line.frame), CGRectGetHeight(_line.frame));
+        _line.frame = CGRectMake(CGRectGetMinX(_line.frame), 160+2*num, CGRectGetWidth(_line.frame), CGRectGetHeight(_line.frame));
         if (2 * num == CGRectGetHeight(imageView.frame) - 20) {
             upOrdown = YES;
         }
     }
     else {
         num --;
-        _line.frame = CGRectMake(CGRectGetMinX(_line.frame), 110+2*num, CGRectGetWidth(_line.frame), CGRectGetHeight(_line.frame));
+        _line.frame = CGRectMake(CGRectGetMinX(_line.frame), 160+2*num, CGRectGetWidth(_line.frame), CGRectGetHeight(_line.frame));
         if (num == 0) {
             upOrdown = NO;
         }
@@ -115,7 +115,7 @@
     imageView.image = [UIImage imageNamed:@"contact_scanframe"];
     [self.view addSubview:imageView];
     [imageView autoAlignAxis:ALAxisVertical toSameAxisOfView:self.view];
-    [imageView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:100];
+    [imageView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:150];
     [imageView autoSetDimensionsToSize:CGSizeMake(0.8 * self.view.frame.size.width, 0.8 * self.view.frame.size.width)];
     
     UILabel * labIntroudction= [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 290, 30)];
@@ -246,6 +246,22 @@
     detailVC.codeOutString = codeResultString;
 }
 
+- (IBAction)btnFlashOnClicked:(id)sender {
+    AVCaptureDevice *flashLight = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if ([flashLight isTorchAvailable] && [flashLight isTorchModeSupported:AVCaptureTorchModeOn])
+    {
+        BOOL success = [flashLight lockForConfiguration:nil];
+        if (success)
+        {
+            if ([flashLight isTorchActive]) {
+                [flashLight setTorchMode:AVCaptureTorchModeOff];
+            } else {
+                [flashLight setTorchMode:AVCaptureTorchModeOn];
+            }
+            [flashLight unlockForConfiguration];
+        }
+    }
+}
 
 
 /*

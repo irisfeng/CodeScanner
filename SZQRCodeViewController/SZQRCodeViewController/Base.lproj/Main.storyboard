@@ -39,11 +39,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gup-TX-veM">
-                                <rect key="frame" x="0.0" y="28" width="375" height="483"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qxr-Bd-JX0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gup-TX-veM">
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="483" id="SNn-r8-DSj"/>
+                                    <constraint firstAttribute="height" constant="639" id="SNn-r8-DSj"/>
                                 </constraints>
                             </webView>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7h-Gu-g4V">
@@ -71,10 +74,14 @@
                         <constraints>
                             <constraint firstItem="sf3-H6-cAc" firstAttribute="trailing" secondItem="bHb-ey-Ojl" secondAttribute="trailingMargin" id="9bw-tL-gN2"/>
                             <constraint firstItem="gup-TX-veM" firstAttribute="top" secondItem="bHb-ey-Ojl" secondAttribute="top" constant="28" id="9tP-xA-xAd"/>
+                            <constraint firstItem="lCK-8j-goL" firstAttribute="top" secondItem="Qxr-Bd-JX0" secondAttribute="bottom" id="Ddt-7P-O75"/>
                             <constraint firstItem="gup-TX-veM" firstAttribute="leading" secondItem="bHb-ey-Ojl" secondAttribute="leading" id="W52-xf-P40"/>
                             <constraint firstAttribute="trailing" secondItem="gup-TX-veM" secondAttribute="trailing" id="ap0-h6-tBT"/>
+                            <constraint firstItem="Qxr-Bd-JX0" firstAttribute="top" secondItem="bHb-ey-Ojl" secondAttribute="top" id="c8w-PD-GeE"/>
                             <constraint firstItem="sf3-H6-cAc" firstAttribute="leading" secondItem="bHb-ey-Ojl" secondAttribute="leadingMargin" id="cs3-XV-OC9"/>
-                            <constraint firstItem="sf3-H6-cAc" firstAttribute="top" secondItem="gup-TX-veM" secondAttribute="bottom" constant="-196" id="vfm-C9-LW0"/>
+                            <constraint firstItem="Qxr-Bd-JX0" firstAttribute="leading" secondItem="bHb-ey-Ojl" secondAttribute="leading" id="uUI-Gf-WoC"/>
+                            <constraint firstItem="sf3-H6-cAc" firstAttribute="top" secondItem="gup-TX-veM" secondAttribute="bottom" constant="-352" id="vfm-C9-LW0"/>
+                            <constraint firstAttribute="trailing" secondItem="Qxr-Bd-JX0" secondAttribute="trailing" id="zgc-aq-5zS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -86,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="-354.39999999999998" y="-566.26686656671666"/>
         </scene>
-        <!--扫一扫-->
+        <!--运维辅助扫一扫-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -124,7 +131,7 @@
                             <constraint firstItem="HpL-E2-mCQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="v3z-5i-sEa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="扫一扫" id="D6j-ik-Dba"/>
+                    <navigationItem key="navigationItem" title="运维辅助扫一扫" id="D6j-ik-Dba"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,7 +148,24 @@
                     <view key="view" contentMode="scaleToFill" id="O2F-TF-wpy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZJ-vL-Wae">
+                                <rect key="frame" x="309" y="72" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3f7-Gp-cDK"/>
+                                    <constraint firstAttribute="width" constant="50" id="DoV-4O-iFJ"/>
+                                </constraints>
+                                <state key="normal" image="flash_button"/>
+                                <connections>
+                                    <action selector="btnFlashOnClicked:" destination="hdF-hG-xhw" eventType="touchUpInside" id="mFp-Cd-inF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AZJ-vL-Wae" firstAttribute="trailing" secondItem="O2F-TF-wpy" secondAttribute="trailingMargin" id="JEw-cI-wFs"/>
+                            <constraint firstItem="AZJ-vL-Wae" firstAttribute="top" secondItem="4sP-1R-eYp" secondAttribute="bottom" constant="8" id="cox-TG-Igs"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="mnF-UK-bKG" kind="presentation" identifier="detailVC" id="jgj-Tp-oSI"/>
@@ -149,11 +173,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V8x-FX-sC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="170" y="186"/>
+            <point key="canvasLocation" x="47" y="186"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg" width="375" height="667"/>
+        <image name="bg-1" width="375" height="667"/>
+        <image name="flash_button" width="50" height="50"/>
         <image name="focus" width="150" height="150"/>
     </resources>
 </document>
