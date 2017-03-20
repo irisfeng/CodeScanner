@@ -20,11 +20,11 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (IBAction)buttonAction:(id)sender
-{
-    SZQRCodeViewController *vc = [[SZQRCodeViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
-}
+//- (IBAction)buttonAction:(id)sender
+//{
+//    SZQRCodeViewController *vc = [[SZQRCodeViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

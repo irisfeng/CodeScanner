@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28607BFC1E7F626B00C839BB /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28607BFB1E7F626B00C839BB /* detailViewController.m */; };
+		28607C041E7F938B00C839BB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28607C031E7F938B00C839BB /* AVFoundation.framework */; };
+		28607C061E7F97B400C839BB /* didi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28607C051E7F97B400C839BB /* didi.mp3 */; };
 		7753C3681CEB21B900E62CAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7753C3671CEB21B900E62CAC /* main.m */; };
 		7753C36B1CEB21B900E62CAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7753C36A1CEB21B900E62CAC /* AppDelegate.m */; };
 		7753C36E1CEB21B900E62CAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7753C36D1CEB21B900E62CAC /* ViewController.m */; };
@@ -39,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28607BFA1E7F626B00C839BB /* detailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = "<group>"; };
+		28607BFB1E7F626B00C839BB /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = "<group>"; };
+		28607C011E7F924D00C839BB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		28607C031E7F938B00C839BB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		28607C051E7F97B400C839BB /* didi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = didi.mp3; sourceTree = "<group>"; };
 		7753C3631CEB21B900E62CAC /* SZQRCodeViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZQRCodeViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7753C3671CEB21B900E62CAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7753C3691CEB21B900E62CAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28607C041E7F938B00C839BB /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +102,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28607BFD1E7F6CAA00C839BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7753C36C1CEB21B900E62CAC /* ViewController.h */,
+				7753C36D1CEB21B900E62CAC /* ViewController.m */,
+				7753C3991CEB220B00E62CAC /* SZQRCodeViewController.h */,
+				7753C39A1CEB220B00E62CAC /* SZQRCodeViewController.m */,
+				28607BFA1E7F626B00C839BB /* detailViewController.h */,
+				28607BFB1E7F626B00C839BB /* detailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		28607BFF1E7F8FE000C839BB /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				28607C051E7F97B400C839BB /* didi.mp3 */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
+		28607C001E7F924C00C839BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28607C031E7F938B00C839BB /* AVFoundation.framework */,
+				28607C011E7F924D00C839BB /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7753C35A1CEB21B900E62CAC = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +139,7 @@
 				7753C37F1CEB21B900E62CAC /* SZQRCodeViewControllerTests */,
 				7753C38A1CEB21B900E62CAC /* SZQRCodeViewControllerUITests */,
 				7753C3641CEB21B900E62CAC /* Products */,
+				28607C001E7F924C00C839BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,13 +156,11 @@
 		7753C3651CEB21B900E62CAC /* SZQRCodeViewController */ = {
 			isa = PBXGroup;
 			children = (
+				28607BFF1E7F8FE000C839BB /* sound */,
+				28607BFD1E7F6CAA00C839BB /* Controller */,
 				7753C39C1CEB290900E62CAC /* PureLayout */,
 				7753C3691CEB21B900E62CAC /* AppDelegate.h */,
 				7753C36A1CEB21B900E62CAC /* AppDelegate.m */,
-				7753C36C1CEB21B900E62CAC /* ViewController.h */,
-				7753C36D1CEB21B900E62CAC /* ViewController.m */,
-				7753C3991CEB220B00E62CAC /* SZQRCodeViewController.h */,
-				7753C39A1CEB220B00E62CAC /* SZQRCodeViewController.m */,
 				7753C36F1CEB21B900E62CAC /* Main.storyboard */,
 				7753C3721CEB21B900E62CAC /* Assets.xcassets */,
 				7753C3741CEB21B900E62CAC /* LaunchScreen.storyboard */,
@@ -278,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28607C061E7F97B400C839BB /* didi.mp3 in Resources */,
 				7753C3761CEB21B900E62CAC /* LaunchScreen.storyboard in Resources */,
 				7753C3731CEB21B900E62CAC /* Assets.xcassets in Resources */,
 				7753C3711CEB21B900E62CAC /* Main.storyboard in Resources */,
@@ -308,6 +347,7 @@
 				7753C3A81CEB290900E62CAC /* NSLayoutConstraint+PureLayout.m in Sources */,
 				7753C36E1CEB21B900E62CAC /* ViewController.m in Sources */,
 				7753C39B1CEB220B00E62CAC /* SZQRCodeViewController.m in Sources */,
+				28607BFC1E7F626B00C839BB /* detailViewController.m in Sources */,
 				7753C36B1CEB21B900E62CAC /* AppDelegate.m in Sources */,
 				7753C3A61CEB290900E62CAC /* ALView+PureLayout.m in Sources */,
 				7753C3A71CEB290900E62CAC /* NSArray+PureLayout.m in Sources */,

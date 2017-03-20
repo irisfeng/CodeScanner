@@ -25,7 +25,66 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqq-xa-t23" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-767" y="186"/>
+            <point key="canvasLocation" x="-1532" y="186"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="LOY-HY-Zgv">
+            <objects>
+                <viewController id="mnF-UK-bKG" customClass="detailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rWI-UF-TJV"/>
+                        <viewControllerLayoutGuide type="bottom" id="lCK-8j-goL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bHb-ey-Ojl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gup-TX-veM">
+                                <rect key="frame" x="0.0" y="28" width="375" height="483"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="483" id="SNn-r8-DSj"/>
+                                </constraints>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7h-Gu-g4V">
+                                <rect key="frame" x="16" y="612" width="343" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="23"/>
+                                <state key="normal" title="完   成" backgroundImage="bg">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="mnF-UK-bKG" eventType="touchUpInside" id="EgC-7Q-VTd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示非链接字符串" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sf3-H6-cAc">
+                                <rect key="frame" x="16" y="315" width="343" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="fS5-8z-fLr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangHK-Light" family="PingFang HK" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sf3-H6-cAc" firstAttribute="trailing" secondItem="bHb-ey-Ojl" secondAttribute="trailingMargin" id="9bw-tL-gN2"/>
+                            <constraint firstItem="gup-TX-veM" firstAttribute="top" secondItem="bHb-ey-Ojl" secondAttribute="top" constant="28" id="9tP-xA-xAd"/>
+                            <constraint firstItem="gup-TX-veM" firstAttribute="leading" secondItem="bHb-ey-Ojl" secondAttribute="leading" id="W52-xf-P40"/>
+                            <constraint firstAttribute="trailing" secondItem="gup-TX-veM" secondAttribute="trailing" id="ap0-h6-tBT"/>
+                            <constraint firstItem="sf3-H6-cAc" firstAttribute="leading" secondItem="bHb-ey-Ojl" secondAttribute="leadingMargin" id="cs3-XV-OC9"/>
+                            <constraint firstItem="sf3-H6-cAc" firstAttribute="top" secondItem="gup-TX-veM" secondAttribute="bottom" constant="-196" id="vfm-C9-LW0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testWebView" destination="gup-TX-veM" id="bTk-54-ePF"/>
+                        <outlet property="textLbl" destination="sf3-H6-cAc" id="pah-48-e8s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVx-vv-WDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354.39999999999998" y="-566.26686656671666"/>
         </scene>
         <!--扫一扫-->
         <scene sceneID="tne-QT-ifu">
@@ -51,7 +110,7 @@
                                 </constraints>
                                 <state key="normal" image="focus"/>
                                 <connections>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wsk-TV-efl"/>
+                                    <segue destination="hdF-hG-xhw" kind="show" id="6Vx-fb-8do"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,7 +128,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88.799999999999997" y="185.75712143928038"/>
+            <point key="canvasLocation" x="-705" y="186"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="Z3I-kb-DUK">
+            <objects>
+                <viewController id="hdF-hG-xhw" customClass="SZQRCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4sP-1R-eYp"/>
+                        <viewControllerLayoutGuide type="bottom" id="OSt-mq-CG7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O2F-TF-wpy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="mnF-UK-bKG" kind="presentation" identifier="detailVC" id="jgj-Tp-oSI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8x-FX-sC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="186"/>
         </scene>
     </scenes>
     <resources>
