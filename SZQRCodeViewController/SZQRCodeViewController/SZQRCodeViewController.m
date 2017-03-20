@@ -28,12 +28,12 @@
 //    return self;
 //}
 
-- (UIActivityIndicatorView *)indicator {
-    if (!_indicator) {
-        _indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    }
-    return _indicator;
-}
+//- (UIActivityIndicatorView *)indicator {
+//    if (!_indicator) {
+//        _indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+//    }
+//    return _indicator;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -58,14 +58,15 @@
     }
     hasCameraRight = YES;
     
-    self.indicator.center = self.view.center;
-    [self.view addSubview:self.indicator];
+//    self.indicator.center = self.view.center;
+//    [self.view addSubview:self.indicator];
     
     // prepare the di sound
     NSString *path = [NSString stringWithFormat:@"%@/didi.mp3",[[NSBundle mainBundle] resourcePath]];
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
     audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
     
+    // setup camera
     [self setupCamera];
 
 }
@@ -108,7 +109,7 @@
 {
     [super viewDidAppear:animated];
     
-    [self.indicator stopAnimating];
+//    [self.indicator stopAnimating];
     
     imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 0.8 * self.view.frame.size.width, 0.8 * self.view.frame.size.width)];
     imageView.image = [UIImage imageNamed:@"contact_scanframe"];
@@ -156,7 +157,7 @@
 - (void)setupCamera
 {
     
-    [self.indicator startAnimating];
+//    [self.indicator startAnimating];
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 耗时的操作
@@ -215,41 +216,17 @@
     
     NSString *stringValue;
     
-    if ([metadataObjects count] >0)
+    if ([metadataObjects count] > 0)
     {
         AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex:0];
         stringValue = metadataObject.stringValue;
         
         [_session stopRunning];
         [timer invalidate];
-        NSLog(@"%@",stringValue);
+//        NSLog(@"%@",stringValue);
         
         if (stringValue.length > 0) {
-//            NSString *url = [NSURL URLWithString:@"html/judgement.html" relativeToURL:[ZXApiClient sharedClient].baseURL].absoluteString;
-//            
-//            if ([stringValue hasPrefix:url]) {
-//                NSArray *arr = [stringValue componentsSeparatedByString:@"?"];
-//                if (arr.count > 1) {
-//                    NSString *uid = [[arr objectAtIndex:1] substringFromIndex:4];
-//                    
-//                    if (uid.integerValue == GLOBAL_UID) {
-//                        ZXMyProfileViewController *vc = [ZXMyProfileViewController viewControllerFromStoryboard];
-//                        [self.navigationController pushViewController:vc animated:YES];
-//                    } else {
-//                        ZXUserProfileViewController *vc = [ZXUserProfileViewController viewControllerFromStoryboard];
-//                        vc.uid = uid.integerValue;
-//                        [self.navigationController pushViewController:vc animated:YES];
-//                    }
-//                }
-//            }
-//            else if ([stringValue hasPrefix:[NSString stringWithFormat:@"%@qrcodelogin?qrcodeId=",@"http://www.aierbon.com/"]]) {
-//                NSString *qrcodeId = [[stringValue componentsSeparatedByString:@"="] lastObject];
-//                ZXLoginBackendViewController *vc = [ZXLoginBackendViewController viewControllerFromStoryboard];
-//                vc.qrcodeid = qrcodeId;
-//                [self.navigationController pushViewController:vc animated:YES];
-//            }
-//            else {
-            
+
             // play the di sound.
             
             [audioPlayer play];

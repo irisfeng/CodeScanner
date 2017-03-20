@@ -25,6 +25,6 @@
 @property (strong,nonatomic)AVCaptureSession * session;
 @property (strong,nonatomic)AVCaptureVideoPreviewLayer * preview;
 @property (nonatomic, retain) UIImageView * line;
-@property (strong, nonatomic) UIActivityIndicatorView *indicator;
+//@property (strong, nonatomic) UIActivityIndicatorView *indicator;
 
 @end
