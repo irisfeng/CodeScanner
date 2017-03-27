@@ -502,6 +502,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AP2P93Q7TN;
 				INFOPLIST_FILE = SZQRCodeViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.irisfeng.SZQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +519,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AP2P93Q7TN;
 				INFOPLIST_FILE = SZQRCodeViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.irisfeng.SZQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
