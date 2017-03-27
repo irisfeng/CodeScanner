@@ -186,7 +186,8 @@
         }
         
         // 条码类型
-        _output.metadataObjectTypes =@[AVMetadataObjectTypeQRCode,AVMetadataObjectTypeUPCECode,
+        _output.metadataObjectTypes =@[AVMetadataObjectTypeQRCode,
+                                       AVMetadataObjectTypeUPCECode,
                                        AVMetadataObjectTypeCode39Code,
                                        AVMetadataObjectTypeCode39Mod43Code,
                                        AVMetadataObjectTypeCode93Code,

@@ -48,7 +48,7 @@
 //    [_indicator startAnimating];
     
     NSURL *url;
-    NSLog(@"传递后的字符串是：%@",self.codeOutString);
+    NSLog(@"%@",self.codeOutString);
     if ([_codeOutString hasPrefix:@"http://"] || [_codeOutString hasPrefix:@"https://"] ) {
         url = [NSURL URLWithString:_codeOutString];
         NSURLRequest *request = [NSURLRequest requestWithURL: url];
