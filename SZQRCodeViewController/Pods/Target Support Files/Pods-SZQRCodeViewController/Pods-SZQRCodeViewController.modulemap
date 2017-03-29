@@ -1,0 +1,6 @@
+framework module Pods_SZQRCodeViewController {
+  umbrella header "Pods-SZQRCodeViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

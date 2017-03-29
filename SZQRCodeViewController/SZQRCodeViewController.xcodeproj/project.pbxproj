@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		282B202E1E8966510090CE10 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282B202D1E8966510090CE10 /* RoundedButton.swift */; };
+		28356DFB1E8A2EBE009FF12F /* DeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28356DFA1E8A2EBE009FF12F /* DeviceDetailViewController.m */; };
 		28607BFC1E7F626B00C839BB /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28607BFB1E7F626B00C839BB /* detailViewController.m */; };
 		28607C041E7F938B00C839BB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28607C031E7F938B00C839BB /* AVFoundation.framework */; };
 		28607C061E7F97B400C839BB /* didi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28607C051E7F97B400C839BB /* didi.mp3 */; };
+		37E25CBFA228697773F94CDB /* Pods_SZQRCodeViewControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0080130F7CD3EBC7E0A8507E /* Pods_SZQRCodeViewControllerTests.framework */; };
+		6238AE098369DD56CB074AF1 /* Pods_SZQRCodeViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D40CFCFEFEAD8037C6482B /* Pods_SZQRCodeViewController.framework */; };
 		7753C3681CEB21B900E62CAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7753C3671CEB21B900E62CAC /* main.m */; };
 		7753C36B1CEB21B900E62CAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7753C36A1CEB21B900E62CAC /* AppDelegate.m */; };
 		7753C36E1CEB21B900E62CAC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7753C36D1CEB21B900E62CAC /* ViewController.m */; };
@@ -23,6 +26,7 @@
 		7753C3A61CEB290900E62CAC /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7753C39E1CEB290900E62CAC /* ALView+PureLayout.m */; };
 		7753C3A71CEB290900E62CAC /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7753C3A01CEB290900E62CAC /* NSArray+PureLayout.m */; };
 		7753C3A81CEB290900E62CAC /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7753C3A21CEB290900E62CAC /* NSLayoutConstraint+PureLayout.m */; };
+		85A7E184CA896A2E4C5E295D /* Pods_SZQRCodeViewControllerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC6F1CFBC2ACB9861B78046 /* Pods_SZQRCodeViewControllerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0080130F7CD3EBC7E0A8507E /* Pods_SZQRCodeViewControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZQRCodeViewControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		230899EB41DE46ABEE848D74 /* Pods-SZQRCodeViewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZQRCodeViewControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZQRCodeViewControllerUITests/Pods-SZQRCodeViewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		282B202C1E8966500090CE10 /* SZQRCodeViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SZQRCodeViewController-Bridging-Header.h"; sourceTree = "<group>"; };
 		282B202D1E8966510090CE10 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		28356DF91E8A2EBE009FF12F /* DeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDetailViewController.h; sourceTree = "<group>"; };
+		28356DFA1E8A2EBE009FF12F /* DeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDetailViewController.m; sourceTree = "<group>"; };
 		28607BFA1E7F626B00C839BB /* detailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailViewController.h; sourceTree = "<group>"; };
 		28607BFB1E7F626B00C839BB /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailViewController.m; sourceTree = "<group>"; };
 		28607C011E7F924D00C839BB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		28607C031E7F938B00C839BB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		28607C051E7F97B400C839BB /* didi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = didi.mp3; sourceTree = "<group>"; };
+		4F6ED4AE69115D2E6446D6B8 /* Pods-SZQRCodeViewControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZQRCodeViewControllerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SZQRCodeViewControllerUITests/Pods-SZQRCodeViewControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7753C3631CEB21B900E62CAC /* SZQRCodeViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SZQRCodeViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7753C3671CEB21B900E62CAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7753C3691CEB21B900E62CAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +86,12 @@
 		7753C3A31CEB290900E62CAC /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
 		7753C3A41CEB290900E62CAC /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
 		7753C3A51CEB290900E62CAC /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		97F92D25EF288F7E79944B7B /* Pods-SZQRCodeViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZQRCodeViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SZQRCodeViewController/Pods-SZQRCodeViewController.release.xcconfig"; sourceTree = "<group>"; };
+		9FB14B45B6732BFD3B86C861 /* Pods-SZQRCodeViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZQRCodeViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZQRCodeViewController/Pods-SZQRCodeViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		9FC6F1CFBC2ACB9861B78046 /* Pods_SZQRCodeViewControllerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZQRCodeViewControllerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64A4ED73F3FBBB205878979 /* Pods-SZQRCodeViewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZQRCodeViewControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SZQRCodeViewControllerTests/Pods-SZQRCodeViewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3C3A834B7DC5CA619598CE6 /* Pods-SZQRCodeViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SZQRCodeViewControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SZQRCodeViewControllerTests/Pods-SZQRCodeViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8D40CFCFEFEAD8037C6482B /* Pods_SZQRCodeViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SZQRCodeViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28607C041E7F938B00C839BB /* AVFoundation.framework in Frameworks */,
+				6238AE098369DD56CB074AF1 /* Pods_SZQRCodeViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E25CBFA228697773F94CDB /* Pods_SZQRCodeViewControllerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +116,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A7E184CA896A2E4C5E295D /* Pods_SZQRCodeViewControllerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01BFE04AADDCD7D7489680EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9FB14B45B6732BFD3B86C861 /* Pods-SZQRCodeViewController.debug.xcconfig */,
+				97F92D25EF288F7E79944B7B /* Pods-SZQRCodeViewController.release.xcconfig */,
+				A64A4ED73F3FBBB205878979 /* Pods-SZQRCodeViewControllerTests.debug.xcconfig */,
+				E3C3A834B7DC5CA619598CE6 /* Pods-SZQRCodeViewControllerTests.release.xcconfig */,
+				230899EB41DE46ABEE848D74 /* Pods-SZQRCodeViewControllerUITests.debug.xcconfig */,
+				4F6ED4AE69115D2E6446D6B8 /* Pods-SZQRCodeViewControllerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		28607BFD1E7F6CAA00C839BB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +145,8 @@
 				7753C39A1CEB220B00E62CAC /* SZQRCodeViewController.m */,
 				28607BFA1E7F626B00C839BB /* detailViewController.h */,
 				28607BFB1E7F626B00C839BB /* detailViewController.m */,
+				28356DF91E8A2EBE009FF12F /* DeviceDetailViewController.h */,
+				28356DFA1E8A2EBE009FF12F /* DeviceDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -131,6 +164,9 @@
 			children = (
 				28607C031E7F938B00C839BB /* AVFoundation.framework */,
 				28607C011E7F924D00C839BB /* AudioToolbox.framework */,
+				E8D40CFCFEFEAD8037C6482B /* Pods_SZQRCodeViewController.framework */,
+				0080130F7CD3EBC7E0A8507E /* Pods_SZQRCodeViewControllerTests.framework */,
+				9FC6F1CFBC2ACB9861B78046 /* Pods_SZQRCodeViewControllerUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +179,7 @@
 				7753C38A1CEB21B900E62CAC /* SZQRCodeViewControllerUITests */,
 				7753C3641CEB21B900E62CAC /* Products */,
 				28607C001E7F924C00C839BB /* Frameworks */,
+				01BFE04AADDCD7D7489680EA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7753C3901CEB21B900E62CAC /* Build configuration list for PBXNativeTarget "SZQRCodeViewController" */;
 			buildPhases = (
+				24F9247A8EC3EE8DF6E31EB6 /* [CP] Check Pods Manifest.lock */,
 				7753C35F1CEB21B900E62CAC /* Sources */,
 				7753C3601CEB21B900E62CAC /* Frameworks */,
 				7753C3611CEB21B900E62CAC /* Resources */,
+				03A890B5455C5D4DB3BA8E29 /* [CP] Embed Pods Frameworks */,
+				53F143656CC7ACB42BF7E6C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7753C3931CEB21B900E62CAC /* Build configuration list for PBXNativeTarget "SZQRCodeViewControllerTests" */;
 			buildPhases = (
+				5398F8861E4089ECF75F88D3 /* [CP] Check Pods Manifest.lock */,
 				7753C3781CEB21B900E62CAC /* Sources */,
 				7753C3791CEB21B900E62CAC /* Frameworks */,
 				7753C37A1CEB21B900E62CAC /* Resources */,
+				72093546786DF68F13FC30C7 /* [CP] Embed Pods Frameworks */,
+				D8B386AB26DFCDDF2B38064A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,9 +302,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7753C3961CEB21B900E62CAC /* Build configuration list for PBXNativeTarget "SZQRCodeViewControllerUITests" */;
 			buildPhases = (
+				73E825BA56C874DFD2CC5C24 /* [CP] Check Pods Manifest.lock */,
 				7753C3831CEB21B900E62CAC /* Sources */,
 				7753C3841CEB21B900E62CAC /* Frameworks */,
 				7753C3851CEB21B900E62CAC /* Resources */,
+				7DA8378F0B6455B19958D55B /* [CP] Embed Pods Frameworks */,
+				9AE46E2DA8F7AA2F62A239A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,6 +391,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03A890B5455C5D4DB3BA8E29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SZQRCodeViewController/Pods-SZQRCodeViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24F9247A8EC3EE8DF6E31EB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5398F8861E4089ECF75F88D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53F143656CC7ACB42BF7E6C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SZQRCodeViewController/Pods-SZQRCodeViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72093546786DF68F13FC30C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SZQRCodeViewControllerTests/Pods-SZQRCodeViewControllerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73E825BA56C874DFD2CC5C24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7DA8378F0B6455B19958D55B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SZQRCodeViewControllerUITests/Pods-SZQRCodeViewControllerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AE46E2DA8F7AA2F62A239A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SZQRCodeViewControllerUITests/Pods-SZQRCodeViewControllerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8B386AB26DFCDDF2B38064A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SZQRCodeViewControllerTests/Pods-SZQRCodeViewControllerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7753C35F1CEB21B900E62CAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -357,6 +541,7 @@
 				282B202E1E8966510090CE10 /* RoundedButton.swift in Sources */,
 				7753C36B1CEB21B900E62CAC /* AppDelegate.m in Sources */,
 				7753C3A61CEB290900E62CAC /* ALView+PureLayout.m in Sources */,
+				28356DFB1E8A2EBE009FF12F /* DeviceDetailViewController.m in Sources */,
 				7753C3A71CEB290900E62CAC /* NSArray+PureLayout.m in Sources */,
 				7753C3681CEB21B900E62CAC /* main.m in Sources */,
 			);
@@ -497,6 +682,7 @@
 		};
 		7753C3911CEB21B900E62CAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB14B45B6732BFD3B86C861 /* Pods-SZQRCodeViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -514,6 +700,7 @@
 		};
 		7753C3921CEB21B900E62CAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F92D25EF288F7E79944B7B /* Pods-SZQRCodeViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -530,6 +717,7 @@
 		};
 		7753C3941CEB21B900E62CAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A64A4ED73F3FBBB205878979 /* Pods-SZQRCodeViewControllerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -543,6 +731,7 @@
 		};
 		7753C3951CEB21B900E62CAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C3A834B7DC5CA619598CE6 /* Pods-SZQRCodeViewControllerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +745,7 @@
 		};
 		7753C3971CEB21B900E62CAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 230899EB41DE46ABEE848D74 /* Pods-SZQRCodeViewControllerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SZQRCodeViewControllerUITests/Info.plist;
@@ -568,6 +758,7 @@
 		};
 		7753C3981CEB21B900E62CAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6ED4AE69115D2E6446D6B8 /* Pods-SZQRCodeViewControllerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SZQRCodeViewControllerUITests/Info.plist;

@@ -227,15 +227,23 @@
 //        NSLog(@"%@",stringValue);
         
         if (stringValue.length > 0) {
+            if([stringValue containsString:@"A3102-00010"]) {
 
             // play the di sound.
             
             [audioPlayer play];
             
             // preform segue
-            [self performSegueWithIdentifier:@"detailVC" sender:stringValue];
-//                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:stringValue]];
-//            }
+            [self performSegueWithIdentifier:@"DeviceDetailVC" sender:stringValue];
+
+            } else {
+                
+                [audioPlayer play];
+                // preform segue
+                [self performSegueWithIdentifier:@"detailVC" sender:stringValue];
+            }
+        } else {
+            printf("扫码内容不含字符串");
         }
     }
     
